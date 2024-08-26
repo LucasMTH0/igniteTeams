@@ -21,7 +21,7 @@ export function NewGroup() {
                     title="Nova turma"
                     subTitle="Crie uma nova turma para adicionar os participantes"
                 />
-                <Input value={groupName} onChangeText={(value) => setGroupName(value) } placeholder="Nome da Turma"/>
+                <Input value={groupName} onChangeText={setGroupName} placeholder="Nome da Turma"/>
                 <Button title="Criar" onPress={handleCreateNewGroup}/>
             </Content>
         </Container>
