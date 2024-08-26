@@ -3,11 +3,11 @@ import { Groups } from "../screens/Groups";
 import { Players } from "../screens/Players";
 import { NewGroup } from "../screens/NewGroup";
 
-const {Group, Navigator, Screen} = createNativeStackNavigator()
+const { Navigator, Screen} = createNativeStackNavigator()
 
-export function AppRouter() {
-    return (
-        <Navigator>
+export function AppRoutes() {
+    return ( 
+        <Navigator screenOptions={{ headerShown: false}} initialRouteName="Groups">
             <Screen 
                 name="Groups"
                 component={Groups}

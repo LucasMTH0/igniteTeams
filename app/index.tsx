@@ -7,6 +7,7 @@ import { Loading } from './components/Loading';
 import { StatusBar } from 'react-native';
 import { NewGroup } from './screens/NewGroup';
 import { Players } from './screens/Players';
+import { Routes } from './routes';
 
 export default function HomeScreen() {
   const [isFontLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold})
@@ -19,7 +20,7 @@ export default function HomeScreen() {
       />
       {
         isFontLoaded ?
-          <Players />
+          <Routes />
           :
           <Loading />
       }
