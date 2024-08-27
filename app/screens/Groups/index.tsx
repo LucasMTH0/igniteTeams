@@ -10,6 +10,7 @@ import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { GroupList } from "@/app/storage/group/groupList";
 import { useFocusEffect } from "expo-router";
+import React from "react";
 
 export function Groups() {
     const [groups, setGroups] = useState([])
